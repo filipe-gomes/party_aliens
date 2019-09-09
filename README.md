@@ -41,10 +41,6 @@ Please feel free to contribute wherever needed. I want to include new features w
 * Defensive barracks for player's ship
 * Sound effects
 
-## Versioning
-
-I have not yet decided on how to do versioning for this game. This was a project designed for learning and familiarizing myself with Python, but I enjoyed being creative with the ideas that helped make this game unique, and would love for it to become something more.
-
 ## Author
 
 * **Filipe Gomes** - [Ulubulu1](https://https://github.com/ulubulu1)
