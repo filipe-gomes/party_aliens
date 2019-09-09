@@ -35,7 +35,7 @@ def run_game():
     bg_color = (230, 230, 230)
 
     # Set background music.
-    pygame.mixer.music.load('song.ogg')
+    pygame.mixer.music.load('music/song.ogg')
     pygame.mixer.music.set_volume(0.5)
     pygame.mixer.music.play(-1)
 
