@@ -35,9 +35,10 @@ def run_game():
     bg_color = (230, 230, 230)
 
     # Set background music.
-    pygame.mixer.music.load('music/song.ogg')
-    pygame.mixer.music.set_volume(0.5)
-    pygame.mixer.music.play(-1)
+    if stats.game_active == False:
+        pygame.mixer.music.load('music/song.ogg')
+        pygame.mixer.music.set_volume(0.3)
+        pygame.mixer.music.play(-1)
 
     # Start the main loop for the game.
     while True:
@@ -47,6 +48,7 @@ def run_game():
             ship.update()
             gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, bullets)
             gf.update_aliens(ai_settings, stats, sb, screen, ship, aliens, bullets)
+            pygame.mixer.music.stop()
          
         gf.update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button)
 

@@ -1,3 +1,4 @@
+import os
 import pygame
 
 _sound_library = {}
@@ -8,7 +9,5 @@ def play_sound(path):
         canonicalized_path = path.replace('/', os.sep).replace('\\', os.sep)
         sound = pygame.mixer.Sound(canonicalized_path)
         _sound_library[path] = sound
-    sound.play()
-
-explosion = pygame.mixer.Sound('soundfx/lexplode.wav')
-explosion.play()
+    else:
+        sound.play()

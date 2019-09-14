@@ -1,6 +1,7 @@
 import sys
 from time import sleep
 import pygame
+from soundfx import play_sound
 from bullet import Bullet
 from alien import Alien
 from button import Button
@@ -197,6 +198,8 @@ def check_bullet_alien_collision(ai_settings, screen, stats, sb, ship, aliens, b
             stats.score += ai_settings.alien_points * len(aliens)
             sb.prep_score()
         check_highscore(stats, sb)
+        play_sound('soundfx/lexplode.ogg')
+
 
     if len(aliens) == 0:
         # Start next level.
