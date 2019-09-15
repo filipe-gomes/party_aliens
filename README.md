@@ -39,7 +39,6 @@ python3 party_aliens.py
 Please feel free to contribute wherever needed. I want to include new features when possible, but time constraints have held me back. Possible new features would include:
 * Aliens shoot back
 * Defensive barracks for player's ship
-* Sound effects
 
 ## Author
 
