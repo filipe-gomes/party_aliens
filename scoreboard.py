@@ -15,7 +15,7 @@ class Scoreboard():
 
         # Font settings for scoring info.
         self.text_color = (0, 255, 0)
-        self.font = pygame.font.Font('../Fonts/Acme-Regular.ttf', 48)
+        self.font = pygame.font.Font('fonts/Acme-Regular.ttf', 48)
 
         # Prepare the initial score image.
         self.prep_score()
