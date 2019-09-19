@@ -12,7 +12,7 @@ class Alien(Sprite):
         self.ai_settings = ai_settings
 
         #Load the alien images and set its rect attribute.
-        self.images = [pygame.image.load('../images/alien1.bmp'), pygame.image.load('../images/alien2.bmp'), pygame.image.load('../images/alien3.bmp'), pygame.image.load('../images/alien4.bmp'), pygame.image.load('../images/alien5.bmp'), pygame.image.load('../images/alien6.bmp'), pygame.image.load('../images/alien7.bmp'), pygame.image.load('../images/alien8.bmp')]
+        self.images = [pygame.image.load('./images/alien1.bmp'), pygame.image.load('./images/alien2.bmp'), pygame.image.load('./images/alien3.bmp'), pygame.image.load('./images/alien4.bmp'), pygame.image.load('./images/alien5.bmp'), pygame.image.load('./images/alien6.bmp'), pygame.image.load('./images/alien7.bmp'), pygame.image.load('./images/alien8.bmp')]
         self.index = 0
         self.image = self.images[self.index]
         self.rect = pygame.Rect(2, 2, 80, 53)

@@ -10,7 +10,7 @@ class Bullet(Sprite):
         self.screen = screen
 
         # Create a bullet rect at (0, 0) and then set the correct position.
-        self.images = [pygame.image.load('../images/fireball_0.bmp'), pygame.image.load('../images/fireball_1.bmp'), pygame.image.load('../images/fireball_3.bmp'), pygame.image.load('../images/fireball_4.bmp'), pygame.image.load('../images/fireball_5.bmp'), pygame.image.load('../images/fireball_6.bmp'), pygame.image.load('../images/fireball_7.bmp'), pygame.image.load('../images/fireball_8.bmp')]
+        self.images = [pygame.image.load('./images/fireball_0.bmp'), pygame.image.load('./images/fireball_1.bmp'), pygame.image.load('./images/fireball_3.bmp'), pygame.image.load('./images/fireball_4.bmp'), pygame.image.load('./images/fireball_5.bmp'), pygame.image.load('./images/fireball_6.bmp'), pygame.image.load('./images/fireball_7.bmp'), pygame.image.load('./images/fireball_8.bmp')]
         self.index = 0
         self.image = self.images[self.index]
         self.rect = self.image.get_rect()
