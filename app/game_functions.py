@@ -141,7 +141,7 @@ def check_play_button(ai_settings, screen, ship, aliens, bullets, stats, sb, pla
 
 def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button):
     """Update game screen."""
-    BackGround = Background('images/space_bg.bmp', [0,0])
+    BackGround = Background('../images/space_bg.bmp', [0,0])
     screen.fill([255, 255, 255])
     screen.blit(BackGround.image, BackGround.rect)
     # Redraw all bullets behind ship and aliens.
@@ -198,7 +198,7 @@ def check_bullet_alien_collision(ai_settings, screen, stats, sb, ship, aliens, b
             stats.score += ai_settings.alien_points * len(aliens)
             sb.prep_score()
         check_highscore(stats, sb)
-        play_sound('soundfx/lexplode.ogg')
+        play_sound('../soundfx/lexplode.ogg')
 
 
     if len(aliens) == 0:

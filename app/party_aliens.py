@@ -36,7 +36,7 @@ def run_game():
 
     # Set background music.
     if stats.game_active == False:
-        pygame.mixer.music.load('music/song.ogg')
+        pygame.mixer.music.load('../music/song.ogg')
         pygame.mixer.music.set_volume(0.3)
         pygame.mixer.music.play(-1)
 
