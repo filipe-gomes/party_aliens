@@ -10,6 +10,7 @@ If you don't already have it, start by installing the latest version of Python 3
 https://realpython.com/installing-python/
 
 Once you have Python 3 installed, you will need to install Pip; which is the preferred method for downloading and installing Python packages.
+
 Downloading Pip
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
