@@ -2,7 +2,10 @@
 
 This is a Space Invaders clone, where your objective is to stop the party aliens from invading our planet and instituting a mandatory party rule, which would cause all humans to dance their way into their graves.
 
-### Installing
+## Demo
+![Demo](demo/demo.gif)
+
+## Installing
 
 Follow the steps below to get all prerequisites and game installed.
 
