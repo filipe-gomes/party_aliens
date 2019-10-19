@@ -1,3 +1,4 @@
+import json
 import pygame.font
 from pygame.sprite import Group
 
@@ -45,7 +46,8 @@ class Scoreboard():
 
     def prep_highscore(self):
         """Turn the high score into a rendered image."""
-        highscore = int(round(self.stats.highscore, -1))
+        highscore_file = open("highscore.txt", "r")
+        highscore = int(highscore_file.read())
         highscore_str = "High Score: {:,}".format(highscore)
         self.highscore_image = self.font.render(highscore_str, True, self.text_color)
 
@@ -53,6 +55,13 @@ class Scoreboard():
         self.highscore_rect = self.highscore_image.get_rect()
         self.highscore_rect.centerx = self.screen_rect.centerx
         self.highscore_rect.top = self.screen_rect.top
+
+    def save_highscore(self):
+        """Save high score to a text file"""
+        highscore = int(round(self.stats.highscore, -1))
+        highscore_file = open("highscore.txt", "w")
+        highscore_file.write(str(highscore))
+        highscore_file.close()
 
     def show_score(self):
         """Draw scores and ships to the screen."""
