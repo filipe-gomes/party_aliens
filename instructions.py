@@ -15,7 +15,8 @@ class Instructions():
 
     def prep_instructions(self):
         """Turn instructions into rendered image."""
-        self.instructions_image = self.font.render(score_str, True, self.text_color)
+        self.instructions_str = "ENTER: Start game\tSPACEBAR: Shoot\t<- or ->: Move ship"
+        self.instructions_image = self.font.render(instructions_str, True, self.text_color)
         self.instructions_image = self.instructions_image.get_rect()
         self.instructions_image.right = self.screen_rect.center
         self.instructions_image.top = self.screen_rect.bottom
