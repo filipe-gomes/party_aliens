@@ -28,7 +28,7 @@ With Pip installed, it's now time to install Pygame. In order to do that, simply
 python3 -m pip install -U pygame --user
 ```
 
-With Pygame installed, you are ready to clone the repo and run Kill the Party Aliens! From your terminal, navigate to the directory where the files are store, then run the following command
+With Pygame installed, you are ready to clone the repo and run Kill the Party Aliens! From your terminal, navigate to the directory where the files are stored, then run the following command
 ```
 python3 party_aliens.py
 ```
