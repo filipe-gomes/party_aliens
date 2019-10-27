@@ -1,7 +1,7 @@
 import json
 import pygame.font
 from pygame.sprite import Group
-
+from instructions import Instructions
 from ship import Ship
 
 class Scoreboard():
@@ -38,8 +38,6 @@ class Scoreboard():
         rounded_score = int(round(self.stats.score, -1))
         score_str = "Score: {:,}".format(rounded_score)
         self.score_image = self.font.render(score_str, True, self.text_color)
-
-        # Display the score at the top right corner of the screen.
         self.score_rect = self.score_image.get_rect()
         self.score_rect.right = self.screen_rect.right
         self.score_rect.top = self.screen_rect.top

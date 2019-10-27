@@ -5,6 +5,7 @@ from game_stats import GameStats
 from scoreboard import Scoreboard
 from ship import Ship
 from button import Button
+from instructions import Instructions
 import game_functions as gf
 
 
@@ -22,6 +23,7 @@ def run_game():
     # Create an instance to store game statistics and create scoreboard.
     stats = GameStats(ai_settings)
     sb = Scoreboard(ai_settings, screen, stats)
+    i = Instructions
 
     # Make a ship, a group of bullets, and a group of aliens.
     ship = Ship(ai_settings, screen)
@@ -50,6 +52,6 @@ def run_game():
             gf.update_aliens(ai_settings, stats, sb, screen, ship, aliens, bullets)
             pygame.mixer.music.stop()
          
-        gf.update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button)
+        gf.update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button, i)
 
 run_game()

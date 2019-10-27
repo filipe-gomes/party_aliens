@@ -19,4 +19,8 @@ class Instructions():
         self.instructions_image = self.font.render(instructions_str, True, self.text_color)
         self.instructions_image = self.instructions_image.get_rect()
         self.instructions_image.right = self.screen_rect.center
-        self.instructions_image.top = self.screen_rect.bottom
+        self.instructions_image.bottom = self.screen_rect.bottom
+
+    def show_instructions(self):
+        """Display instructions on screen."""
+        self.screen.blit(self.instructions_image)

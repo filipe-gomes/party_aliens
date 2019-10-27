@@ -6,6 +6,7 @@ from bullet import Bullet
 from alien import Alien
 from button import Button
 from background import Background
+from instructions import Instructions
 
 
 def ship_hit(ai_settings, stats, sb, screen, ship, aliens, bullets):
@@ -150,7 +151,7 @@ def check_play_button(ai_settings, screen, ship, aliens, bullets, stats, sb, pla
         start_game(ai_settings, screen, stats, sb, ship, aliens, bullets)
         
 
-def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button):
+def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button, i):
     """Update game screen."""
     BackGround = Background('images/space_bg.bmp', [0,0])
     screen.fill([255, 255, 255])
@@ -161,12 +162,13 @@ def update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_bu
     ship.blitme()
     aliens.draw(screen)
 
-    # Display player's score.
+    # Display player's score and instructions.
     sb.show_score()
     
-    # Make button if game is inactive
+    # Make button and show instructions if game is inactive
     if stats.game_active == False:
         play_button.draw_button()
+        i.show_instructions()
 
     # Make the most recently drawn screen visible.
     pygame.display.flip()
