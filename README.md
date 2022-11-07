@@ -46,7 +46,7 @@ Please feel free to contribute wherever needed. I want to include new features w
 
 ## Author
 
-* **Filipe Gomes** - [filipe-gomes](https://https://github.com/filipe-gomes)
+* **Filipe Gomes** - [filipe-gomes](https://github.com/filipe-gomes)
 
 ## License
 
